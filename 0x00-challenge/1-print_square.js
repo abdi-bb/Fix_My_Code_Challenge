@@ -1,10 +1,11 @@
 #!/usr/bin/node
 /*
     Print a square with the character #
-
-    The size of the square must be the first argument
+    
+    The size of the square must be the first argument 
     of the program.
 */
+
 
 if (process.argv.length <= 2) {
     process.stderr.write("Missing argument\n");
@@ -15,7 +16,7 @@ if (process.argv.length <= 2) {
 
 const size = parseInt(process.argv[2]);
 
-if (isNaN(size) || size <= 0) {
+if (isNaN(size)) {
     process.stderr.write("Invalid size\n");
     process.exit(1);
 }
